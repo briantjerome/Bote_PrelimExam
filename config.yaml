@@ -33,4 +33,15 @@
         copy:
           dest: /etc/motd
           content: "Ansible Managed Node by briantjerome"
+      
+      - name: username briant
+        user:
+          name: briant
+          uid: 1002
+          shell: /bin/bash
+          group: root
+          append: yes
+          createhome: yes
+          home: /home/briant
+          
 
